@@ -12,9 +12,9 @@ The group includes:
 | # | Name | Links |
 ----|------|-------|
 1  |Ethan Schwab | 13, 11, 12, 14, 16
-2  |Will Lounsbery-Scaife | 9, 16, 12
+2  |Will Lounsbery-Scaife | 9, 16, 12, 15(?)
 3  |James Reina | 8, 12
-4  |Aaron Coppa | 15
+4  |Aaron Coppa | 15, 
 5  |Matthew Dalton| 12, 11, 13, 10, 15, 16
 6  |Noah Kramer| 16, 13, 14
 7  |Caspar Lant | 8, 10, 12, 15, 16
