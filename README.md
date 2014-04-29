@@ -11,13 +11,13 @@ The group includes:
 
 | # | Name | Links |
 ----|------|-------|
-1  |Ethan Schwab | 
-2  |Will Lounsbery-Scaife | 
-3  |James Reina | 
-4  |Aaron Coppa | 
-5  |Matthew Dalton| 
-6  |Noah Kramer| 
-7  |Caspar Lant | 
+1  |Ethan Schwab | 13, 11
+2  |Will Lounsbery-Scaife | 16
+3  |James Reina | 8
+4  |Aaron Coppa | 15
+5  |Matthew Dalton| 12, 11
+6  |Noah Kramer| 16, 13
+7  |Caspar Lant | 8, 10, 12, 15, 16
 8  |Mika Schweitzer|
 9  |Savannah Jeffreys|
 10 |Isabel Sanhueza|
