@@ -5,7 +5,17 @@ Nodal web visualization of senior hookup transitivity based on the data collecte
 
 see: http://linkedjazz.org/network/
 
-I have decided to use a social clique at Stuyvesant (that I am associated with) as my test pool. Please note that this has not been done in an effort to be exclusionary. I feel that testing should be done with a small sample size with verifiably accurate data so as not to create confusion. The “Gaybois” group at Stuyvesant is perfect because it has an absolute perimeter (defined by the members of a group-chat on Facebook).  The group is fairly incestuous, which will make for a complex web good at determining the effectiveness of the node placement algorithm. The group also has varying degrees of overlap, i.e. Ada Mui, who—as far as I know—has had no sexual contact with anyone in the group; and James Reina and Mika Schweitzer, who have been in a monogamous relationship for almost 3 years. However, these two have had non-monogamous periods, which have enabled them to link to the central cluster.
+## Goals: 
+[ ] Nodal Web
+[ ] Size of node relative to number of links
+[ ] Pink/Blue nodes to represent sex
+[ ] Label Nodes
+[ ] Nodes are pictures obtained with the Facebook API (apparently it's pretty easy to use
+[ ] Auto name completion when entering data (I promise this will save more time than it takes to implement. It will also reduce spelling errors)
+
+-------------------------------
+
+I have decided to use a social clique at Stuyvesant (that I am associated with) as my test pool. Please note that this has not been done in an effort to be exclusionary. I feel that testing should be done with a small sample size with verifiably accurate data so as not to create confusion. The “Gaybois” group at Stuyvesant is perfect because it has an absolute perimeter (defined by the members of a group-chat on Facebook).  The group is fairly incestuous, which will make for a complex web, good at determining the effectiveness of the node placement algorithm. The group also has varying degrees of overlap, i.e. Ada Mui, who—as far as I know—has had no sexual contact with anyone in the group; and James Reina and Mika Schweitzer, who have been in a monogamous relationship for almost 3 years. However, these two have had non-monogamous periods, which have enabled them to link to the central cluster.
  
 The group includes:
 
