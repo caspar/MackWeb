@@ -25,19 +25,19 @@ The group includes:
 ----|------|-------|
 1  |Ethan Schwab | 13, 11, 12, 14, 16
 2  |Will Lounsbery-Scaife | 9, 16, 12, 15(?)
-3  |James Reina | 8, 12
+3  |James Reina | 8, 12, 10, 15, 9
 4  |Aaron Coppa | 15, 
 5  |Matthew Dalton| 12, 11, 13, 10, 15, 16
-6  |Noah Kramer| 16, 13, 14
+6  |Noah Kramer| 16, 13, 14, 8, 9
 7  |Caspar Lant | 8, 10, 12, 15, 16
 8  |Mika Schweitzer|
 9  |Savannah Jeffreys|
-10 |Isabel Sanhueza| 15
+10 |Isabel Sanhueza|
 11 |Tahía Islam|
 12 |Eugenia Sánchez|
 13 |Megan Wilson|
 14 |Rosalie Campbell|
-15 |Claire Arlen|
+15 |Claire Linn|
 16 |Raquel Brau Diaz|
 17 |Ada Mui|
 (Divided by gender, ranked in no particular order)
