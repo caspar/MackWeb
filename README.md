@@ -22,7 +22,7 @@ I have decided to use a social clique at Stuyvesant (that I am associated with) 
 The group includes:
 
 | # | Name | Links | Total
-----|------|-------|
+----|------|-------|------
 1  |Ethan Schwab | 13, 11, 12, 14, 16 | 5
 2  |Will Lounsbery-Scaife | 9, 16, 12, 15 | 4
 3  |James Reina | 8, 12, 10, 15, 9 | 5
