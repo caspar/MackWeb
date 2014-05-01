@@ -27,7 +27,7 @@ The group includes:
 2  |Will Lounsbery-Scaife | 9, 16, 12, 15 | 4
 3  |James Reina | 8, 12, 10, 15, 9 | 5
 4  |Aaron Coppa | 15 | 1!
-5  |Matthew Dalton| 12, 11, 13, 10, 15, 16, 14 | 7
+5  |Matthew Dalton| 12, 11, 13, 10, 15, 16, 14, 9 | 8
 6  |Noah Kramer| 16, 13, 14, 8, 9 | 5
 7  |Caspar Lant | 8, 10, 12, 15, 16 | 5
 8  |Mika Schweitzer| 3, 6, 7 | 3
