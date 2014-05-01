@@ -31,7 +31,7 @@ The group includes:
 6  |Noah Kramer| 16, 13, 14, 8, 9 | 5
 7  |Caspar Lant | 8, 10, 12, 15, 16 | 5
 8  |Mika Schweitzer| 3, 6, 7 | 3
-9  |Savannah Jeffreys| 2, 3, 9 | 3 
+9  |Savannah Jeffreys| 2, 3, 6 | 3 
 10 |Isabel Sanhueza| 3, 5, 7 | 3
 11 |Tahía Islam| 1, 5 | 2
 12 |Eugenia Sánchez| 1, 2, 3, 5, 7 | 5
