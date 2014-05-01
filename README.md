@@ -42,6 +42,7 @@ The group includes:
 17 |Ada Mui| | 0
 
 Average: 4 (1/4 of the group)
+
 (Divided by gender, ranked in no particular order)
 
 
