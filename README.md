@@ -39,7 +39,9 @@ The group includes:
 14 |Rosalie Campbell| 1, 6, 5 | 3
 15 |Claire Linn| 2, 3, 4, 5, 7 | 5
 16 |Raquel Brau Diaz| 1, 2, 5, 6, 7 | 5 
-17 |Ada Mui| 0
+17 |Ada Mui| | 0
+
+Average: 4 (1/4 of the group)
 (Divided by gender, ranked in no particular order)
 
 
