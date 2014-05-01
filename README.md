@@ -21,25 +21,25 @@ I have decided to use a social clique at Stuyvesant (that I am associated with) 
  
 The group includes:
 
-| # | Name | Links |
+| # | Name | Links | Total
 ----|------|-------|
-1  |Ethan Schwab | 13, 11, 12, 14, 16
-2  |Will Lounsbery-Scaife | 9, 16, 12, 15(?)
-3  |James Reina | 8, 12, 10, 15, 9
-4  |Aaron Coppa | 15, 
-5  |Matthew Dalton| 12, 11, 13, 10, 15, 16, 14
-6  |Noah Kramer| 16, 13, 14, 8, 9
-7  |Caspar Lant | 8, 10, 12, 15, 16
-8  |Mika Schweitzer| 3, 6, 7
-9  |Savannah Jeffreys| 2, 3, 9, 
-10 |Isabel Sanhueza| 3, 5, 7
-11 |Tahía Islam| 1, 5
-12 |Eugenia Sánchez| 1, 2, 3, 5, 7, 
-13 |Megan Wilson| 1, 5, 6, 
-14 |Rosalie Campbell| 1, 6, 
-15 |Claire Linn| 2, 3, 4, 5, 7
-16 |Raquel Brau Diaz| 1, 2, 5, 6, 7, 
-17 |Ada Mui|
+1  |Ethan Schwab | 13, 11, 12, 14, 16 | 5
+2  |Will Lounsbery-Scaife | 9, 16, 12, 15 | 4
+3  |James Reina | 8, 12, 10, 15, 9 | 5
+4  |Aaron Coppa | 15 | 1!
+5  |Matthew Dalton| 12, 11, 13, 10, 15, 16, 14 | 7
+6  |Noah Kramer| 16, 13, 14, 8, 9 | 5
+7  |Caspar Lant | 8, 10, 12, 15, 16 | 5
+8  |Mika Schweitzer| 3, 6, 7 | 3
+9  |Savannah Jeffreys| 2, 3, 9 | 3 
+10 |Isabel Sanhueza| 3, 5, 7 | 3
+11 |Tahía Islam| 1, 5 | 2
+12 |Eugenia Sánchez| 1, 2, 3, 5, 7 | 5
+13 |Megan Wilson| 1, 5, 6 | 3 
+14 |Rosalie Campbell| 1, 6 | 2
+15 |Claire Linn| 2, 3, 4, 5, 7 | 5
+16 |Raquel Brau Diaz| 1, 2, 5, 6, 7 | 5 
+17 |Ada Mui| 0
 (Divided by gender, ranked in no particular order)
 
 
