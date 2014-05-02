@@ -7,10 +7,10 @@ see: http://linkedjazz.org/network/
 
 ## Goals: 
 
-- [ ] Nodal Web
-- [ ] Size of node relative to number of links
-- [ ] Pink/Blue nodes to represent sex
-- [ ] Label Nodes
+- [x] Nodal Web
+- [x] Size of node relative to number of links
+- [x] Pink/Blue nodes to represent sex
+- [x] Label Nodes
 - [ ] Nodes are pictures obtained with the Facebook API (apparently it's pretty easy to use
 - [ ] Auto name completion when entering data (I promise this will save more time than it takes to implement. It will also reduce spelling errors)
 
