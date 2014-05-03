@@ -1,68 +1,159 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<title>Caspar Lant - Bargraph</title>
+<head>
+	<h1 align="center">Baygois Incestuosity</h1>
+
+
+
+</head>
 <style>
-
-	.node {
-		stroke: #fff;
-		stroke-width: 1.5px;
-	}
-
-	.link {
-		stroke: #999;
-		stroke-opacity: .6;
-	}
-
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: relative;
+        width: 960px;
+    }
+    .axis text {
+        font: 10px sans-serif;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    .bar {
+        fill-opacity: .9;
+    }
+    .x.axis path {
+        display: none;
+    }
+    label {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 </style>
-<body>
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script>
+<label>
+    <input type="checkbox">Sort values</label>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+    var margin = {
+        top: 20,
+        right: 20,
+        bottom: 30,
+        left: 40
+    },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
-		var width = 960,
-			height = 500;
+    var formatPercent = d3.format("0");
 
-		var color = d3.scale.category20();
+    var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1, 1);
 
-		var force = d3.layout.force()
-		.charge(-120)
-		.linkDistance(30)
-		.size([width, height]);
+    var y = d3.scale.linear()
+        .range([height, 0]);
 
-		var svg = d3.select("body").append("svg")
-		.attr("width", width)
-		.attr("height", height);
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
 
-		d3.json("miserables.json", function(error, graph) {
-			force
-			.nodes(graph.nodes)
-			.links(graph.links)
-			.start();
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .tickFormat(formatPercent);
 
-			var link = svg.selectAll(".link")
-			.data(graph.links)
-			.enter().append("line")
-			.attr("class", "link")
-			.style("stroke-width", function(d) { return Math.sqrt(d.value); });
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-			var node = svg.selectAll(".node")
-			.data(graph.nodes)
-			.enter().append("circle")
-			.attr("class", "node")
-			.attr("r", 5)
-			.style("fill", function(d) { return color(d.group); })
-			.call(force.drag);
+    d3.tsv("data.tsv", function(error, data) {
 
-			node.append("title")
-			.text(function(d) { return d.name; });
+        data.forEach(function(d) {
+            d.frequency = +d.frequency;
+        });
 
-			force.on("tick", function() {
-				link.attr("x1", function(d) { return d.source.x; })
-				.attr("y1", function(d) { return d.source.y; })
-				.attr("x2", function(d) { return d.target.x; })
-				.attr("y2", function(d) { return d.target.y; });
+        x.domain(data.map(function(d) {
+            return d.name;
+        }));
+        y.domain([0, d3.max(data, function(d) {
+            return d.frequency;
+        })]);
 
-				node.attr("cx", function(d) { return d.x; })
-				.attr("cy", function(d) { return d.y; });
-			});
-		});
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
 
-	</script>
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Bags");
+
+        svg.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) {
+                return x(d.name);
+            })
+            .attr("fill", function(d) {
+                return d.color;
+            })
+            .style("width", function(d) {
+                return d.name;
+            })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) {
+                return y(d.frequency);
+            })
+            .attr("height", function(d) {
+                return height - y(d.frequency);
+            });
+
+        d3.select("input").on("change", change);
+
+        var sortTimeout = setTimeout(function() {
+            d3.select("input").property("checked", true).each(change);
+        }, 2000);
+
+        function change() {
+            clearTimeout(sortTimeout);
+
+            // Copy-on-write since tweens are evaluated after a delay.
+            var x0 = x.domain(data.sort(this.checked ? function(a, b) {
+                    return b.frequency - a.frequency;
+                } : function(a, b) {
+                    return d3.ascending(a.name, b.name);
+                })
+                .map(function(d) {
+                    return d.name;
+                }))
+                .copy();
+
+            var transition = svg.transition().duration(750),
+                delay = function(d, i) {
+                    return i * 50;
+                };
+
+            transition.selectAll(".bar")
+                .delay(delay)
+                .attr("x", function(d) {
+                    return x0(d.name);
+                });
+
+            transition.select(".x.axis")
+                .call(xAxis)
+                .selectAll("g")
+                .delay(delay);
+        }
+    });
+</script>

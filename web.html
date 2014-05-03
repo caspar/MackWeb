@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<title>Caspar Lant - MackWeb</title>
 <style>
 
 	/*.node {
@@ -30,14 +31,27 @@
 
 		var force = d3.layout.force()
 		.charge(-1000)
-		.linkDistance(150)
+		.linkDistance(140)
 		.size([width, height]);
 
 		var svg = d3.select("body").append("svg")
 		.attr("width", width)
 		.attr("height", height);
 
-		d3.json("Realdata.json", function(error, graph) {
+		d3.json("data.json", function(error, graph) {
+			var nodes = graph.nodes.slice(),
+				links = [],
+				bilinks = [];
+
+			graph.links.forEach(function(link) {
+				var s = nodes[link.source],
+					t = nodes[link.target],
+					i = {}; // intermediate node
+				nodes.push(i);
+				links.push({source: s, target: i}, {source: i, target: t});
+				bilinks.push([s, i, t]);
+			});
+			
 			force
 			.nodes(graph.nodes)
 			.links(graph.links)
@@ -47,8 +61,8 @@
 			var link = svg.selectAll(".link")
 			.data(graph.links)
 			.enter().append("line")
-			.attr("class", "link");
-			//.style("stroke-width", function(d) { 1; });
+			.attr("class", "link")
+			.style("stroke-width", function(d) { return 3; });
 
 			var node = svg.selectAll(".node")
 			.data(graph.nodes)
