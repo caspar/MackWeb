@@ -46,3 +46,5 @@ Average: 4 (1/4 of the group)
 (Divided by gender, ranked in no particular order)
 
 
+[![Analytics](https://ga-beacon.appspot.com/UA-46871910-2/FlagGame)](https://github.com/igrigorik/ga-beacon)
+
