@@ -7,10 +7,10 @@ see: http://linkedjazz.org/network/
 
 ## Goals: 
 
-- [ ] Nodal Web
-- [ ] Size of node relative to number of links
-- [ ] Pink/Blue nodes to represent sex
-- [ ] Label Nodes
+- [x] Nodal Web
+- [x] Size of node relative to number of links
+- [x] Pink/Blue nodes to represent sex
+- [x] Label Nodes
 - [ ] Nodes are pictures obtained with the Facebook API (apparently it's pretty easy to use
 - [ ] Auto name completion when entering data (I promise this will save more time than it takes to implement. It will also reduce spelling errors)
 
@@ -23,23 +23,23 @@ The group includes:
 
 | # | Name | Links | Total
 ----|------|-------|------
-1  |Ethan Schwab | 13, 11, 12, 14, 16 | 5
-2  |Will Lounsbery-Scaife | 9, 16, 12, 15 | 4
-3  |James Reina | 8, 12, 10, 15, 9 | 5
-4  |Aaron Coppa | 15 | 1!
-5  |Matthew Dalton| 12, 11, 13, 10, 15, 16, 14, 9 | 8
-6  |Noah Kramer| 16, 13, 14, 8, 9 | 5
-7  |Caspar Lant | 8, 10, 12, 15, 16 | 5
-8  |Mika Schweitzer| 3, 6, 7 | 3
-9  |Savannah Jeffreys| 2, 3, 6 | 3 
-10 |Isabel Sanhueza| 3, 5, 7 | 3
-11 |Tahía Islam| 1, 5 | 2
-12 |Eugenia Sánchez| 1, 2, 3, 5, 7 | 5
-13 |Megan Wilson| 1, 5, 6 | 3 
-14 |Rosalie Campbell| 1, 6, 5 | 3
-15 |Claire Linn| 2, 3, 4, 5, 7 | 5
-16 |Raquel Brau Diaz| 1, 2, 5, 6, 7 | 5 
-17 |Ada Mui| | 0
+0  |Ethan Schwab | 12, 10, 11, 13, 15 | 5
+1  |Will Lounsbery-Scaife | 8, 15, 11, 14 | 4
+2  |James Reina | 9, 11, 9, 14, 8 | 5
+3  |Aaron Coppa | 14 | 1!
+4  |Matthew Dalton| 11, 10, 12, 9, 14, 15, 13, 8 | 8
+5  |Noah Kramer| 15, 12, 13, 9, 8 | 5
+6  |Caspar Lant | 7, 9, 11, 14, 15 | 5
+7  |Mika Schweitzer| 2, 5, 6 | 3
+8  |Savannah Jeffreys| 1, 2, 5 | 3 
+9 |Isabel Sanhueza| 2, 4, 6 | 3
+10 |Tahía Islam| 0, 4 | 2
+11 |Eugenia Sánchez| 0, 1, 2, 4, 6 | 5
+12 |Megan Wilson| 0, 4, 5 | 3 
+13 |Rosalie Campbell| 0, 5, 4 | 3
+14 |Claire Linn| 1, 2, 3, 4, 6 | 5
+15 |Raquel Brau Diaz| 0, 1, 4, 5, 6 | 5 
+16 |Ada Mui| | 0
 
 Average: 4 (1/4 of the group)
 
