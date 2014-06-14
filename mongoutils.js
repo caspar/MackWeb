@@ -7,3 +7,7 @@ mongoutils plan (for my reference):
 conn = new Mongo();
 db = conn.getDB("mackDB");
 
+function addStudent(name, gender, crushes) { //name is a string, gender boolean (male true, female false), crushes should be a list
+    db.students.insert({"name": name, "gender": gender, "crushes": crushes});
+}
+
