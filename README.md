@@ -3,7 +3,7 @@ MackWeb
 
 Nodal web visualization of senior hookup transitivity based on the data collected from Stuy senior "Crush Lists".
 
-see: http://linkedjazz.org/network/
+see: casparlant.com/testweb
 
 ## Goals: 
 
